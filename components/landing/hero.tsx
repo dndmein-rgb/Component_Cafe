@@ -7,6 +7,27 @@ import { BrowseComponentsButton } from "../ui/browse-button";
 import { BrowseBlocksButton } from "../ui/browse-blocks";
 import Features from "./features";
 import Link from "next/link";
+import Card_02 from "../codesnippetui/card/card-02";
+import Profile01 from "../codesnippetui/profile/profile-01";
+import Card_03 from "../codesnippetui/card/card-03";
+import AIInput_01 from "../codesnippetui/ai-input/ai-input-01";
+import AIInput_02 from "../codesnippetui/ai-input/ai-input-02";
+import AIInput_03 from "../codesnippetui/ai-input/ai-input-03";
+import AIInput_04 from "../codesnippetui/ai-input/ai-input-04";
+import Btn02 from "../codesnippetui/buttons/btn-02";
+import Btn03 from "../codesnippetui/buttons/btn-03";
+import Btn10 from "../codesnippetui/buttons/btn-10";
+import Btn09 from "../codesnippetui/buttons/btn-09";
+import Btn06 from "../codesnippetui/buttons/btn-06";
+import Btn07 from "../codesnippetui/buttons/btn-07";
+import Input_02 from "../codesnippetui/input/input-02";
+import Input_03 from "../codesnippetui/input/input-03";
+import Input_04 from "../codesnippetui/input/input-04";
+import Input_08 from "../codesnippetui/input/input-08";
+import Input_09 from "../codesnippetui/input/input-09";
+import Input11 from "../codesnippetui/input/input-11";
+import Card_LiquidProgress from "../codesnippetui/cardliquid";
+
 const HeroSection = () => {
   return (
     <div className="mx-auto w-full max-w-7xl min-h-screen flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 px-4 sm:px-6 mg:py-16 lg:py-20 ">
@@ -80,7 +101,8 @@ const HeroSection = () => {
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
               Card
             </span>
-            {/*<Card /> */}
+
+            <Card_03 />
           </div>
 
           <div className="w-full max-w-150 bg-transparent">
@@ -88,6 +110,7 @@ const HeroSection = () => {
               Components
             </span>
             {/*<ActionSearchBar /> */}
+            <Profile01 />
           </div>
         </motion.div>
         <motion.div
@@ -101,9 +124,10 @@ const HeroSection = () => {
           </span>
           <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex justify-center items-center">
             {/**<AInput /> */}
+            <AIInput_04 />
           </div>
         </motion.div>
-             <motion.div
+        <motion.div
           initial={{ opacity: 0, y: -20, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -111,23 +135,23 @@ const HeroSection = () => {
         >
           <div className="w-full">
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-            Buttons
-          </span>
-          </div>
-          
-          <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex flex-col gap-3 justify-center items-center">
+              Buttons
+            </span>
+             <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex flex-col gap-3 justify-center items-center">
             {/**<AInput /> */}
-            <Link href={'/docs/components/button'}>
-            {/* <Buttons />*/}
-            </Link> 
-            <Link href={'/docs/components/button'}> {/* <Buttons />*/}</Link>
+            <Link href={"/docs/components/button"}>{/* <Buttons />*/} <Btn02 />
+            </Link>
+            <Link href={"/docs/components/button"}> {/* <Buttons />*/}<Btn07 /></Link>
           </div>
+          </div>
+
+         
 
           <div className="w-full ">
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-            Buttons
-          </span>
-          <Link href={'/docs/components/input'}>{/*inputs*/}</Link>
+              Buttons
+            </span>
+            <Link href={"/docs/components/input"}>{/*inputs*/}<Card_LiquidProgress /></Link>
           </div>
         </motion.div>
       </div>
