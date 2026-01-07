@@ -1,3 +1,5 @@
+"use client";
+
 import { Flame, Menu } from "lucide-react";
 import Link from "next/link";
 import { Link as ViewTransitionsLink } from "next-view-transitions";
@@ -5,6 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 import { PartyPopper } from "lucide-react";
 import { ThemeToggle } from "../ui/theme-toggle";
 import { Badge } from "../ui/badge";
+import { HeaderPro } from "./header-pro";
 
 export function Header() {
   return (
@@ -96,7 +99,7 @@ export function Header() {
                 {/* Right side items */}
                 <div className="hidden sm:flex items-center gap-3">
                   <span className="text-border">|</span>
-                  {/* <HeaderPro /> */}
+                  <HeaderPro />
                   <ThemeToggle />
                 </div>
 

@@ -32,7 +32,7 @@ const HeroSection = () => {
   return (
     <div className="mx-auto w-full max-w-7xl min-h-screen flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 px-4 sm:px-6 py-8 lg:py-12">
       {/*LEFT SIDE -TITLE & CTA */}
-      <div className="w-full lg:w-[45%] flex flex-col items-center text-center space-y-8 lg:-mt-96">
+      <div className="w-full lg:w-[45%] flex flex-col items-center text-center space-y-8 lg:-mt-104">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ const HeroSection = () => {
         <Features />
       </div>
       {/*RIGHT SIDE-COMPONENTS LAYOUT  */}
-      <div className="w-full lg:w-[55%] flex flex-col justify-between gap-6 lg:pl-8">
+      <div className="w-full lg:w-[55%] flex flex-col justify-between -mt-30 gap-6 lg:pl-8">
         {/*Top Row-Action search bar */}
         <motion.div
           initial={{ opacity: 0, y: -20, scale: 0.95 }}

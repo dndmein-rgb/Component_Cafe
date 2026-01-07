@@ -1,3 +1,4 @@
+"use client"
 import { cn } from "@/lib/utils";
 import { Calendar, Sparkles, Code2, ExternalLink, Share2, Star, Award, TrendingUp, Briefcase } from "lucide-react";
 import { useState } from "react";

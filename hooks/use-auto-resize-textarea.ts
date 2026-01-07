@@ -55,4 +55,4 @@ export function useAutoResizeTextarea({
     }, [adjustHeight]);
 
     return { textareaRef, adjustHeight };
-} 
+}
